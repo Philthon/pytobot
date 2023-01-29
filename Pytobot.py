@@ -21,6 +21,7 @@ keyboard = kb.Controller()
 def callback(url):
     webbrowser.open_new(url)
 
+
 def open_file():
     filepath = askopenfilename(
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
@@ -33,6 +34,7 @@ def open_file():
         txt_edit.insert(tk.END, text)
     window.title(f"Pytobot - {filepath}")
 
+
 def save_file():
     filepath = asksaveasfilename(
         defaultextension="txt",
@@ -44,6 +46,7 @@ def save_file():
         text = txt_edit.get(1.0, tk.END)
         output_file.write(text)
     window.title(f"Pytobot - {filepath}")
+
 
 def run_file():
     text = txt_edit.get(1.0, tk.END)
@@ -187,6 +190,7 @@ def run_file():
                 elif curr_el == "\n#":
                     time.sleep(0)
 
+
 def run_record_help():
     newWindow = Toplevel(window)
     window.iconphoto(True, tk.PhotoImage(data=image_data))
@@ -202,51 +206,66 @@ def run_record_help():
     )
     txt_edit.insert(tk.END, text)
 
+
 def run_record_mouse(self):
     currentMouseX, currentMouseY = pyautogui.position()
     txt_edit.insert(
         tk.END, "clickl," + str(currentMouseX) + "," + str(currentMouseY) + ",\n"
     )
 
+
 def run_record_copy(self):
     txt_edit.insert(tk.END, "copy,\n")
+
 
 def run_record_paste(self):
     txt_edit.insert(tk.END, "paste,\n")
 
+
 def run_record_enter(self):
     txt_edit.insert(tk.END, "enter,\n")
+
 
 def run_record_write(self):
     txt_edit.insert(tk.END, "write,\n")
 
+
 def run_record_doubleclick(self):
     txt_edit.insert(tk.END, "dclick,\n")
+
 
 def run_record_clickpress(self):
     txt_edit.insert(tk.END, "clickpress,\n")
 
+
 def run_record_clickrelease(self):
     txt_edit.insert(tk.END, "clickrelease,\n")
+
 
 def run_record_sleep5sec(self):
     txt_edit.insert(tk.END, "sleep5sec,\n")
 
+
 def run_record_sleep30sec(self):
     txt_edit.insert(tk.END, "sleep30sec,\n")
+
 
 def run_record_delete(self):
     txt_edit.insert(tk.END, "delete,\n")
 
+
 def run_record_loop1(self):
     txt_edit.insert(tk.END, "loop1,\n")
+
 
 def run_record_loop8(self):
     txt_edit.insert(tk.END, "loop8,\n")
 
+
 def run_sample():
     text = "start,\ncmd,\nwrite,Pytobot.website,\nenter,\nsleep5sec,\nmove,500,500,\nscroll,-500,"
     txt_edit.insert(tk.END, text)
+
 
 def help_file():
     newWindow = Toplevel(window)
@@ -265,6 +284,7 @@ def help_file():
         + "\n#YourComment, \t\t\t- #this is how you can write a comment. Don't use commas in your comment \n\t\t\tbut at the end,"
     )
     txt_edit.insert(tk.END, text)
+
 
 def support_file():
     newWindow = Toplevel(window)
@@ -289,9 +309,7 @@ def support_file():
         font=("roboto", 10),
         padx=1,
         pady=0,
-        text=(
-            "Check out Pytobot's GitHub! \nDownload the latest version!"
-        ),
+        text=("Check out Pytobot's GitHub! \nDownload the latest version!"),
     ).pack(side="top")
     link2 = Label(
         newWindow,
@@ -374,10 +392,9 @@ def support_file():
         font=("roboto", 10),
         padx=1,
         pady=0,
-        text=(
-            "Icon credit: \nhttps://www.flaticon.com/authors/freepik \n\n\n"
-        ),
+        text=("Icon credit: \nhttps://www.flaticon.com/authors/freepik \n\n\n"),
     ).pack(side="top")
+
 
 def github_link():
     newWindow = Toplevel(window)
@@ -402,9 +419,7 @@ def github_link():
         font=("roboto", 10),
         padx=10,
         pady=0,
-        text=(
-            "Awesome!\n\nCheck out the GitHub repo:"
-        ),
+        text=("Awesome!\n\nCheck out the GitHub repo:"),
     ).pack(side="top")
     link2 = Label(
         newWindow,
@@ -418,6 +433,7 @@ def github_link():
     )
     link2.pack()
     link2.bind("<Button-1>", lambda e: callback("https://github.com/Philthon/pytobot"))
+
 
 # Main Window
 window = tk.Tk()
