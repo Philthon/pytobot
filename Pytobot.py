@@ -263,7 +263,7 @@ def run_record_loop8(self):
 
 
 def run_sample():
-    text = "start,\ncmd,\nwrite,Pytobot.website,\nenter,\nsleep5sec,\nmove,500,500,\nscroll,-500,"
+    text = "start,\ncmd,\nwrite,buymeacoffee.com/pytobot,\nenter,\nsleep5sec,\nmove,500,500,\nscroll,-500,"
     txt_edit.insert(tk.END, text)
 
 
