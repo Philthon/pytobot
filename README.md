@@ -37,7 +37,7 @@ One command per line. Sample code at the end. You can use the following operator
 
 # Copy and Paste Functions:
 - Copy                                        # Copy (same as Ctrl+C)
-- Paste("name")                               # Paste (same as Ctrl+V) by default the clipboard
+- Paste("name")                               # Paste the quoted text
 - Paste                                       # Paste (same as Ctrl+V) by default the clipboard
 - Cut                                         # Cut (same as Ctrl+X)
 - SelectAllAndCopy                            # Select all and copy (same as Ctrl+A and Ctrl+C)
