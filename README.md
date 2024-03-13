@@ -5,6 +5,7 @@ Pytobot is a Python-based automation tool that allows you to automate tasks on y
 # Installation:
 - Download and install Pytobot from [Pytobot's website](https://pytobot-website.vercel.app/).
 - Clone GitHub repository and run `pip install -r requirements.txt` in the terminal.
+- Run Pytobot.py
 
 # Syntax:
 One command per line. Sample code at the end. You can use the following operators:
@@ -94,9 +95,9 @@ One command per line. Sample code at the end. You can use the following operator
 - ALT Left and 1 Prints click and mouse coordinates
 
 # Sample Script:
-\#Sample Comment
-KeyboardCmdHold
-KeyboardWrite("edge")
-KeyboardEnter
-KeyboardWrite("Tell me a fun fact")
-KeyboardEnter
+\#Sample Comment  
+KeyboardCmdHold  
+KeyboardWrite("edge")  
+KeyboardEnter  
+KeyboardWrite("Tell me a fun fact")  
+KeyboardEnter  
