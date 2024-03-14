@@ -33,7 +33,7 @@ One command per line. Sample code at the end. You can use the following operator
 - KeyboardWrite("word or phrase")             # Type the specified word or phrase
 - KeyboardCtrlHold                            # Hold down the Ctrl key
 - KeyboardCtrlRelease                         # Release the Ctrl key
-- KeyboardCmd                                 # Hold down the Cmd key (e.g., for switching apps)
+- KeyboardCmd                                 # Press the CMD key (e.g., for switching apps)
 
 # Copy and Paste Functions:
 - Copy                                        # Copy (same as Ctrl+C)
@@ -96,7 +96,7 @@ One command per line. Sample code at the end. You can use the following operator
 
 # Sample Script:
 \#Sample Comment  
-KeyboardCmdHold  
+KeyboardCmd  
 KeyboardWrite("edge")  
 KeyboardEnter  
 KeyboardWrite("Tell me a fun fact")  
